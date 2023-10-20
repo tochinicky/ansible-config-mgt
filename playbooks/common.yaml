@@ -41,5 +41,5 @@
         state: touch
 
     - name: set timezone
-      timezone:
-        name: Africa/Lagos 
+      become: true
+      shell: timedatectl set-timezone Africa/Lagos
